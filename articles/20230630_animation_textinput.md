@@ -20,6 +20,7 @@ React Native + ExpoでTextInputを実装したい場合、React Nativeの公式�
 
 
 ### After
+※ GIFのフレームレートの影響で改善されていないように見えますが、実際はより滑らかになっています。
 ![](https://storage.googleapis.com/zenn-user-upload/d3c8ed83e21e-20230630.gif)
 
 
