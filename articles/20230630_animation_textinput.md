@@ -99,7 +99,7 @@ https://qiita.com/kaba/items/d2fb7b22822f7add19a3
 
 今回のコードでアニメーションを設定している部分は、下記の部分です。durationやspringDampingの設定値は、私達の環境でうまく動作した値なので、適宜変更してください。
 
-```:ts
+```ts:
 const CustomLayoutSpring = {
   duration: 200,
   // 要素が作成された場合
