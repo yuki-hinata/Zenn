@@ -1,9 +1,9 @@
 ---
-title: "firebaseのデータを永続化してみた"
+title: "firebase emulatorを再起動しても、データが消えないようにしてみた"
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Firebase","Tech"]
-published: true
+published: false
 publication_name: "manalink_dev"
 ---
 目次
