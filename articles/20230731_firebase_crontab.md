@@ -3,7 +3,7 @@ title: "firebase emulatorを再起動しても、データが消えないよう�
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Firebase","Tech"]
-published: false
+published: true
 publication_name: "manalink_dev"
 ---
 目次
