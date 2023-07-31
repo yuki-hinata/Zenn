@@ -26,7 +26,6 @@ launchdを用いた方法をやめた理由は、launchdは各エンジニアの
 またdockerを使っているため、docker containerの中でcrontabを実行する方針に決めました。
 
 ## 実装
-Dockerfile
 ```md:docker/local/Dockerfile
 FROM node:14.18.1-bullseye
 
@@ -45,7 +44,6 @@ COPY ./docker/local/crontab /etc/cron.d/crontab
 RUN yarn && cd functions && yarn
 ```
 
-crontab
 ```md:docker/local/crontab
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -54,7 +52,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #
 ```
 
-package.json
 ```json:package.json
 "scripts": {
     "emulators:with_import": "service cron restart && firebase emulators:start -P default --import=./data/export_my_data --export-on-exit",
