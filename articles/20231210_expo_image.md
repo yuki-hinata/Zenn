@@ -20,7 +20,6 @@ publication_name: "manalink_dev"
 
 ## 2. 実装と解決策
 弊社では、[react-native-image-zoom-viewer](https://github.com/siimorasmae/react-native-image-zoom-viewer)というライブラリを使用して、画像をモーダルとして見たり、拡大表示する機能を実現させています。
-<br />
 このライブラリは、下記のサンプルコードのように画像表示するコンポーネントを渡すことができるのですが、そこにExpo ImageのImageコンポーネントを渡すことで、画像表示速度が改善しました。
 ```tsx:Images.tsx
 import { Image as ExpoImage } from 'expo-image';
@@ -37,15 +36,13 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 ## 3. Expo Imageとは？
 Expo Imageは、Expo SDK 48以降に含まれているコンポーネントで、画像を表示するためのコンポーネントです。今までは、Expo Managed Workflowを使っている場合は、React NativeのImageコンポーネントを使っていました。
-<br />
 ですが、React NativeのImageコンポーネントには画像の表示速度が遅いという問題がありました。その点Expo Imageは、公式ドキュメントに書かれているように、Expo Imageはスピード重視の設計になっているので、その点でReact NativeのImageコンポーネントよりも優れていると言えます。
 
 
 ## 4. どれくらい早くなったのか？
 実際に、Expo Imageを使う前と使った後の画像表示速度を計測してみました。計測方法は、人力でストップウォッチを使って朝(10:00ぐらい)、昼(13:00ぐらい)、夜(18:00ぐらい)の計3回計測しました。4Gかつ、20MB、10MB、300KBの画像を、Expo 47でReact NativeのImageコンポーネントを使っているバージョンと、Expo 48でExpo Imageを使っているバージョンでそれぞれ5回ずつ送信し、その表示速度の平均を取り、比較しました。4Gで計測している理由は、Wi-Fiの場合は、画像の表示速度が早すぎて、あまり参考にならなかったためです。
-<br />
 結果に関しては、長くなるため20MBのときの計測結果だけ載せます。
-<br />
+
 ### Expo 47でReact NativeのImageコンポーネントを使っているバージョン
 朝: (3 + 3.1 + 2.5 + 2.8 + 3) / 5 = **2.88**
 
