@@ -6,6 +6,8 @@ topics: ["React Native", "Expo", "Tech"]
 published: false
 publication_name: "manalink_dev"
 ---
+※ この記事は [React Native Advent Calendar 2023](https://qiita.com/advent-calendar/2023/react-native) の 11日目の記事です。
+
 目次
 1. 背景
 2. アプリ側の実装と解決策
