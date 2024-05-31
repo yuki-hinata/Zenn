@@ -1,9 +1,9 @@
 ---
 title: "CTOが社内UIライブラリを作ったので、メンバー視点で役に立ったか話します"
-emoji: "🧞‍"
+emoji: "🥳"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["React", "TypeScript"]
-published: false
+published: true
 publication_name: "manalink_dev"
 ---
 
