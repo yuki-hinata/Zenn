@@ -3,7 +3,7 @@ title: "Expoのdevelopment buildを導入したので、詰まったところを
 emoji: "🍎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["React Native", "expo", "Tech"]
-published: true
+published: false
 publication_name: "manalink_dev"
 ---
 
