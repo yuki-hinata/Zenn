@@ -43,7 +43,7 @@ https://rnfirebase.io/#expo
 ### 3. expo-dev-clientの依存関係ライブラリでの`cannnot find interface declaration`エラーの発生
 **起こったこと**:　`eas build --profile development --platform ios`を実行すると、`expo-dev-client`の依存関係先である`expo-dev-menu`や`expo-dev-launcher`で`cannot find interface declaration for 'RCTRootViewFactory'`のようなエラーが起こり、ビルドが失敗する
 
-**解決方法**: 上記のようなことをやっても全く解決しませんでした(出る場所は違うが、エラーの内容はほぼ一緒)。そこで`expo-updates`が怪しいと感じました。理由としては他にいじった部分がないこと、エラーのはかれているファイルでExUpdatesというInterfaceが使われていたためです。最初に述べたように`expo-updates`のversionを特定のバージョン以上にすると、ビルドが失敗します。そのため一旦`npx expo install --check`で依存関係を整理してから、`expo-updates`のバージョンを上げると、ビルドは失敗しなくなりました。
+**解決方法**: 色々試しましたがビルドが失敗を重ねたので、今までやったことを振り返ってみました。そうなると`expo-updates`が怪しいと思えてきました。理由としては他にいじった部分がないこと、エラーが出ているファイルでExUpdatesというInterfaceが使われていたためです。最初に述べたように`expo-updates`のversionを特定のバージョン以上にすると、ビルドが失敗します。そのため一旦`npx expo install --check`で依存関係を整理してから、`expo-updates`のバージョンを使用中のExpo SDKのバージョンと互換性のある依存関係のバージョンをインストールすると、1番のようなエラーは出なくなりました。
 
 その後再度ビルドを走らせたところ、上記の`cannot find interface declaration`のエラーも発生することなく、ビルドが成功するようになりました。
 
