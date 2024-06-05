@@ -12,8 +12,8 @@ publication_name: "manalink_dev"
 - Expoのdevelopment buildで詰まっている方
 
 ## 環境
-- Expo SDK: 50.0.19
-- React Native: 0.73.6
+- Expo SDK: 50系
+- React Native: 0.73系
 - Expo Workflow: Managed Workflow
 
 ## Expoのdevelopment buildとは？
