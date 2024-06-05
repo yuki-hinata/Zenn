@@ -1,9 +1,10 @@
 ---
-title: "Expoのdevelopment buildを導入したので、詰まったところを共有します"
+title: "Expo GoからExpo development buildに移行したので、詰まったところを共有します"
 emoji: "🍎"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["React Native", "expo", "Tech"]
-published: false
+published: true
+published_at: 2024-06-06 09:00
 publication_name: "manalink_dev"
 ---
 
@@ -12,8 +13,8 @@ publication_name: "manalink_dev"
 - Expoのdevelopment buildで詰まっている方
 
 ## 環境
-- Expo SDK: 50.0.19
-- React Native: 0.73.6
+- Expo SDK: 50系
+- React Native: 0.73系
 - Expo Workflow: Managed Workflow
 
 ## Expoのdevelopment buildとは？
@@ -26,7 +27,7 @@ https://docs.expo.dev/develop/development-builds/create-a-build/
 
 https://docs.expo.dev/develop/development-builds/introduction/
 
-## development build導入の際に詰まったとこ
+## development build移行の際に詰まったとこ
 ### 1. そもそもbuildコマンドが実行されない！
 **起こったこと**:　`eas build --profile development --platform ios`を実行すると、`Cannot destructure property 'expoUsername' of 'undefined' as it is undefined.`というエラーが出て、ビルドが失敗する
 
