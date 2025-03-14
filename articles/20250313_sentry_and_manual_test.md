@@ -1,10 +1,9 @@
 ---
 title: "Sentryが導入されていると手動テスト担当者がとても助かるという話"
-emoji: "🍎"
+emoji: "🛣️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["sentry"]
-published: true
-published_at: 2024-06-06 09:00
+published: false
 publication_name: "manalink_dev"
 ---
 ## はじめに
